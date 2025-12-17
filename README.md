@@ -6,30 +6,42 @@ Olá, boas vindas ao meu perfil github 👋
 Me chamo Frederico Faleiro, mas pode me chamar de Fred!
 </h2>
 
-<p style="margin: 20px;">
+<p align="right">
+<table width="100%">
+<tr><td valign="top" width="50%">
+
   Sou estudante e iniciante em Desenvolvimento de Software, explorando tanto front-end quanto back-end e eu tive meu primeiro contato com tecnologia por meio de cursos na Alura, onde aprendi o básico de JavaScript, HTML e CSS. Tenho grande interesse em áreas que envolvem Inteligência Artificial e estou sempre buscando aprender mais e evoluir nesse universo da tecnologia.
   Inicio minha graduação em Engenharia de Software em 2026 e pretendo compartilhar essa jornada por aqui.
 
   No tempo livre, gosto de jogar no PC  (Fortnite, Valorant, LoL e etc).
   Fique à vontade para conversar comigo sobre projetos, estudos ou só para trocar ideias 
+
+  <div align="center"> 
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2NkaXlwaHFuMDNyanUydnhqbWM1dTNkc3psb3I4eTltYXY3YTZieSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Sm9AfJRiZofjlrkAAl/giphy.gif"  alt=""gato mechendo no computador">
+
+</td></tr>
+</table>
 </p>
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2NkaXlwaHFuMDNyanUydnhqbWM1dTNkc3psb3I4eTltYXY3YTZieSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Sm9AfJRiZofjlrkAAl/giphy.gif" alt="gato mechendo no computador">
+<a href="https://www.instagram.com/_fred.fs/">
+    <img align="left" width="80px" src="https://i.ibb.co/qkGSp1D/instagram.png" alt="instagram" style="vertical-align:top;">
+  </a> 
+  <a href="https://www.linkedin.com/in/frederico-faleito-261408264/">
+    <img aling="left" width="80px" src="https://i.ibb.co/RyZx12b/linkedin.png" alt="linkedin" style="vertical-align:top;">
+  </a>
+  
+### 🖥️ Tecnologias e Ferramentas que estou aprendendo:
 
+<img align="left" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="hmtl">
+<img align="left" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="css">
+<img align="left" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="javaScript">
+<img align="left" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="git">
+<img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" alt="github">
 
+##
+<div>
+  <a href="https://github.com/fredericofaleiro">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fredericofaleiro&layout=compact&langs_count=7&theme=dracula"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=fredericofaleiro&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
+</div>
 
-
-<!--
-**fredericofaleiro/fredericofaleiro** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
