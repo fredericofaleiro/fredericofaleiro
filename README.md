@@ -35,7 +35,7 @@ Me chamo Frederico Faleiro, mas pode me chamar de Fred!
 <img align="left" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="css">
 <img align="left" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="javaScript">
 <img align="left" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="git">
-<img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" alt="github">
+<img width="50px" src="https://github.com/user-attachments/assets/6d0f887b-bf55-4dbc-b1f5-8f464166e887" alt="github">
 
 ##
 <div>
