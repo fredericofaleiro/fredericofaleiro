@@ -3,7 +3,7 @@ Olá, boas vindas ao meu perfil github 👋
 </h1>
 
 <h2>
-Me chamo Frederico Faleiro, mas pode me chamar de Fred!
+Me chamo Frederico, mas pode me chamar de Fred!
 </h2>
 
 <p align="right">
