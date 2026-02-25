@@ -16,7 +16,6 @@ Me chamo Frederico, mas pode me chamar de Fred!
   Fique à vontade para conversar comigo sobre projetos, estudos ou só para trocar ideias 
 
   <div align="center"> 
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2NkaXlwaHFuMDNyanUydnhqbWM1dTNkc3psb3I4eTltYXY3YTZieSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Sm9AfJRiZofjlrkAAl/giphy.gif"  alt=""gato mechendo no computador">
 
 </td></tr>
 </table>
