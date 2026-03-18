@@ -13,8 +13,6 @@ Me chamo Frederico, mas pode me chamar de Fred!
   Sou estudante e iniciante em Desenvolvimento de Software, explorando tanto front-end quanto back-end e eu tive meu primeiro contato com tecnologia por meio de cursos na Alura, onde aprendi o básico de JavaScript, HTML e   CSS. Tenho grande interesse em áreas que envolvem Inteligência Artificial e estou sempre buscando aprender mais e evoluir nesse universo da tecnologia.
   Aluno da faculdade unialfa em goiania, cursando engenharia de software.
 
-  opa
-
   Fique à vontade para conversar comigo sobre projetos, estudos ou só para trocar ideias 
 
   <div align="center"> 
