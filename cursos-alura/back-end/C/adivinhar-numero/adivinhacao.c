@@ -109,6 +109,7 @@ int main() {
         printf("          \\__U_/        \n");
 
         printf("\nVocê perdeu! Tente novamente!\n\n");
+        printf("%d", numerosecreto);
     }
 
 
