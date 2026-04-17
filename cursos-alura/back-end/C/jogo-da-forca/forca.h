@@ -1,4 +1,4 @@
-#define TAMANHO_PALAVRA 20
+#define TAMANHO_PALAVRA 40
 
 void abertura();
 void chuta();
