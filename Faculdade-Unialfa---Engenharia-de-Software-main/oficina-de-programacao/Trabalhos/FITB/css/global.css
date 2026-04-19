@@ -19,3 +19,10 @@ button {
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Oswald", sans-serif;
+  overflow-x: hidden; 
+  overflow-y: auto;   
+  background-color: rgb(34, 34, 34);
+}

@@ -1,0 +1,30 @@
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer img {
+    width: 180px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+.footer li img {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .footer img {
+        width: 200px;
+        height: 70px;
+    }
+
+    .footer li img {
+        width: 70px;
+        height: 70px;
+    }
+    
+}
