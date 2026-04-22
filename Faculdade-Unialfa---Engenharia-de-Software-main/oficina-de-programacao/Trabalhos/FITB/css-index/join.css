@@ -1,0 +1,46 @@
+.membership {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.membership-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(196, 245, 19);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.membership-box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}   
+
+.membership-box form input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.membership-box form button {
+    width: 80%;
+    padding: 10px;
+    background-color: rgb(46, 46, 46);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(196, 245, 19);
+}
+
+.membership h2 {
+    color: rgb(46, 46, 46);
+    text-align: center;
+}

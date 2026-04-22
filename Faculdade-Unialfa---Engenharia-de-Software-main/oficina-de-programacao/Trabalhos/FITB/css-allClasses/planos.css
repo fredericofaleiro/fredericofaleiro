@@ -1,0 +1,62 @@
+.planos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: #0e0e0e;
+  padding: 80px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 30px;
+  width: 300px;
+  color: white;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  color: #aaa;
+  font-size: 18px;
+}
+
+.card h2 {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.card h2 span {
+  color: #c6ff00;
+}
+
+.card p {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.card ul li {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  background: #c6ff00;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}

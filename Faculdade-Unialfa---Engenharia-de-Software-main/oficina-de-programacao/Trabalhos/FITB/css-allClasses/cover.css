@@ -1,0 +1,42 @@
+.cover {
+    color: rgb(255, 255, 255);
+    margin-left: 6%;
+}
+
+.cover h1 {
+    margin: 10% 0;
+}
+
+.cover .diff {
+    color: rgb(180, 180, 180);
+}
+
+.cover p {
+    width: 86%;
+    margin-bottom: 5%;
+    line-height: 1.5;
+}
+
+.cover .btn {
+    margin: 0;
+    width: 200px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cover {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cover p {
+        margin: 40px 0;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    .cover p {
+        margin: 60px 0;
+    }
+    
+}
