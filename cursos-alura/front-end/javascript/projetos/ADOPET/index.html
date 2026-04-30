@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADOPET - Encontre seu Novo Amigo!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        h2,
+        h3 {
+            /* Aplicado a h2 e h3 */
+            color: #2196F3;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        #pets-section {
+            /* Novo ID para a seção principal dos pets */
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        #lista-pets {
+            /* ID para a lista que vai receber os pets */
+            list-style: none;
+            /* Remove os marcadores padrão da lista */
+            padding: 0;
+            margin: 0;
+        }
+
+        .pet-item {
+            /* Estilo para cada item de pet na lista */
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            display: flex;
+            /* Para alinhar imagem e texto */
+            align-items: center;
+            gap: 20px;
+            /* Espaço entre a imagem e o texto */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .pet-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .pet-item img {
+            width: 100px;
+            /* Tamanho fixo para a imagem do pet */
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            /* Imagem redonda */
+            border: 2px solid #FF5722;
+            flex-shrink: 0;
+            /* Impede que a imagem encolha */
+        }
+
+        .pet-details {
+            flex-grow: 1;
+            /* Permite que os detalhes ocupem o espaço restante */
+        }
+
+        .pet-details h4 {
+            color: #FF5722;
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.3em;
+        }
+
+        .pet-details p {
+            margin: 3px 0;
+            color: #555;
+        }
+
+        .pet-details .species {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .pet-details .breed {
+            font-style: italic;
+            color: #777;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ADOPET</h1>
+        <p>Encontre seu novo melhor amigo!</p>
+    </header>
+
+    <main>
+        <section id="pets-section">
+            <h3>Pets Disponíveis para Adoção</h3>
+            <ul id="lista-pets">
+
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ADOPET. Todos os direitos reservados.</p>
+    </footer>
+    <script type="module" src="js/api.js"></script>
+    <script type="module" src="js/ui.js"></script>
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
