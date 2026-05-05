@@ -1,0 +1,25 @@
+.form-event {
+  background-color: #212121;
+  padding: 34px 28px;
+  border-radius: 16px;
+  max-width: 90%;
+  color: #FFFFFF;
+  width: 384px;
+  height: 406px;
+  margin: 64px auto;
+}
+
+.form-event fieldset {
+  font-size: 16px;
+  padding: 0;
+  margin: 40px 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  gap: 20px;
+}
+
+.form-event button {
+  margin: 0 149px;
+}

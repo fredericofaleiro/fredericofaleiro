@@ -152,3 +152,15 @@ input[type="checkbox"]:checked ~ nav {
     font-size: 18px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+    .top-bar {
+    max-width: 2680px;
+  }
+
+  .main-header {
+    max-width: 2680px;
+  }
+
+
+}
