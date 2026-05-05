@@ -44,9 +44,9 @@ export function FormularioDeEventos() {
         </ListaSuspensa>
       </CampoDeFormulario>
       </div>
-      <Botao>
-        criar evento
-      </Botao>
+      <div className="acoes">
+      <Botao>Criar evento</Botao>
+      </div>
     </form>
   )
 }
