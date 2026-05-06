@@ -5,6 +5,7 @@ import { Label } from "../Label"
 import { CampoDeEntrada } from "../CampoDeEntrada"
 import { ListaSuspensa } from "../listaSuspensa"
 import { Botao } from "../botao"
+import { temas } from "../temas/temas"
 
 export function FormularioDeEventos() {
   return (
@@ -23,6 +24,16 @@ export function FormularioDeEventos() {
         placeholder='Summer dev hits'
         />
       </CampoDeFormulario>
+        <CampoDeFormulario>
+        <Label htmlFor="capa">
+          Qual o endereço da imagem de capa
+        </Label>
+        <CampoDeEntrada 
+        type="text" 
+        id='capa' 
+        placeholder='http://...'
+        />
+      </CampoDeFormulario>
       <CampoDeFormulario>
         <Label htmlFor="dateEvento">
           Data do evento
@@ -37,11 +48,9 @@ export function FormularioDeEventos() {
          tema do evento
         </Label>
         <ListaSuspensa 
-         id='tema' 
-         placeholder='Selecione uma opção' 
-         opcoes={["Selecione uma opção","Front-end", "Back-end", "inteligencia artificial", "devops", "data science", "cloud"]}>
-         Qual o tema do evento?
-        </ListaSuspensa>
+        id='tema' 
+        itens={temas}
+        />
       </CampoDeFormulario>
       </div>
       <div className="acoes">

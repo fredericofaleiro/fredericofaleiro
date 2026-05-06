@@ -1,0 +1,38 @@
+.card-evento {
+    background-color: #212121;
+    width: 282px;
+    color: #FFFFFF;
+}
+
+.card-evento .tag {
+    background-color: #4A4949;
+    width: 94px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 10px;
+    font-family: 'orbitron';
+    border-radius: 3px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.card-evento .corpo {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    gap: 8px;
+}
+
+.card-evento .date {
+    font-weight: 400;
+    font-size: 13px;
+    margin: 0;
+}
+
+.card-evento .titulo {
+    font-size: 25px;
+    font-family: 'orbitron';
+    font-weight: bold;
+    margin: 0;
+}

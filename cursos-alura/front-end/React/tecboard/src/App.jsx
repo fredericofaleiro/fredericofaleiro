@@ -1,16 +1,17 @@
 import './App.css'
 import {FormularioDeEventos} from "./componentes/FormularioDeEventos"
+import {Temas} from "./componentes/Temas"
+import {Banner} from "./componentes/Banner"
+import {Logo} from "./componentes/Logo"
  
 function App() {
+
   return (
     <main>
-      <header>
-        <img src="public/logo.png" alt="" />
-      </header>
-      <section>
-        <img src="public/banner.png" alt="" />
-      </section>
+      <Logo/>
+      <Banner/>
       <FormularioDeEventos/>
+      <Temas/>
     </main>
   )
 }
