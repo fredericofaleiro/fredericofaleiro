@@ -1,1 +1,0 @@
-comunicação com backend

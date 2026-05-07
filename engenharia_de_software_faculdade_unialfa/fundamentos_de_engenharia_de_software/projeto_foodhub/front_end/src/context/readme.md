@@ -1,1 +1,0 @@
-compartilhar dados globalmente
