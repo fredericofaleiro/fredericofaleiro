@@ -1,5 +1,9 @@
-import "./botao.estilos.css"
+import './botao.estilos.css'
 
-export function Botao(props) {
-    return <button className="botao-forms" {...props}/>
+export function Botao({ children }) {
+    return (
+        <button className='botao'>
+            {children}
+        </button>
+    )
 }

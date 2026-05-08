@@ -1,5 +1,6 @@
-.label-form {
+.label {
     font-weight: 400;
     font-size: 16px;
-    line-height: 125%;
+    line-height: 120%;
+    color: #FFFFFF;
 }

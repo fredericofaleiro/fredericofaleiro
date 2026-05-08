@@ -1,14 +1,14 @@
-import "./card-eventos.estilos.css"
+import './card-eventos.estilos.css'
 
 export function CardEvento({ evento }) {
-    return(
-        <div className="card-evento">
-            <img src={evento.capa} alt={evento.titulo} />
+    return (
+        <div className='card-evento'>
+            <img src={evento.capa} alt={evento.titulo}/>
             <div className="corpo">
                 <p className="tag">
                     {evento.tema.nome}
                 </p>
-                <p className="date">
+                <p>
                     {evento.data.toLocaleDateString('pt-BR')}
                 </p>
                 <h4 className="titulo">

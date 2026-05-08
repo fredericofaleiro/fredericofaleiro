@@ -1,9 +1,9 @@
-import "./banner.estilos.css"
+import './banner.estilos.css'
 
 export function Banner() {
     return (
-    <section className="hero">
-      <img src="/banner.png" alt="" />
-    </section>
+        <section className='banner'>
+            <img src="/banner.png" alt="" />
+        </section>
     )
 }
