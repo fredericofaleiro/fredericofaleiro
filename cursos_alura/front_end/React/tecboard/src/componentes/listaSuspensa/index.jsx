@@ -1,4 +1,4 @@
-import './lista-suspensa.estilos.css'
+import './lista-suspesa.estilos.css'
 
 export function ListaSuspensa ({ itens, ...rest }) {
 

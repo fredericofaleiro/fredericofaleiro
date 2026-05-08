@@ -2,8 +2,9 @@ import { useState } from 'react'
 import './App.css'
 import { Banner } from './componentes/Banner'
 import { CardEvento } from './componentes/CardEvento'
-import { FormularioDeEvento } from './componentes/FormularioDeEventos'
+import { FormularioDeEvento } from './componentes/FormularioDeEvento'
 import { Tema } from './componentes/Tema'
+// no react, componentes são FUNÇÕES
 
 function App() {
 
@@ -45,8 +46,11 @@ function App() {
   ])
 
   function adicionarEvento(evento) {
+    // eventos.push(evento)
+    // console.log('eventos => ', eventos)
     setEventos([...eventos, evento])
   }
+  // renderização condicional usando &&
   return (
     <main>
       <header>
@@ -80,6 +84,22 @@ function App() {
           )
         })}
       </section>
+
+      {/* <section>
+        <Tema tema={temas[1]} />
+      </section>
+      <section>
+        <Tema tema={temas[2]} />
+      </section>
+      <section>
+        <Tema tema={temas[3]} />
+      </section>
+      <section>
+        <Tema tema={temas[4]} />
+      </section>
+      <section>
+        <Tema tema={temas[5]} />
+      </section> */}
     </main>
   )
 }

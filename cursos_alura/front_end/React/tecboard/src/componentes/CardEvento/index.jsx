@@ -1,4 +1,4 @@
-import './card-eventos.estilos.css'
+import './card-evento.estilos.css'
 
 export function CardEvento({ evento }) {
     return (
@@ -8,7 +8,7 @@ export function CardEvento({ evento }) {
                 <p className="tag">
                     {evento.tema.nome}
                 </p>
-                <p>
+                <p className='data'>
                     {evento.data.toLocaleDateString('pt-BR')}
                 </p>
                 <h4 className="titulo">

@@ -1,4 +1,4 @@
-import "./tema.estilos.css"
+import './tema.estilos.css'
 
 export function Tema({ tema }) {
 
