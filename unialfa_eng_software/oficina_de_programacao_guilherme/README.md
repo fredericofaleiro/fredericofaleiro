@@ -1,1 +1,1 @@
-aprendizados em front-end
+Aprendizados em front-end na faculdade.
