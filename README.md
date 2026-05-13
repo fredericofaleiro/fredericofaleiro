@@ -40,7 +40,7 @@ Tenho interesse em desenvolvimento de software, Inteligência Artificial e novas
 
 ## 📫 Contato
 
-<a href="https://www.linkedin.com/in/frederico-faleito-261408264/" target="_blank">
+<a href="https://www.linkedin.com/in/frederico-faleiro-261408264?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
   <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
 </a>
 
