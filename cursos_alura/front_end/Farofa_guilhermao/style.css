@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(Captura\ de\ tela\ 2026-05-19\ 135350.png) no-repeat center center/cover;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.container{
+  background: rgba(0,0,0,0.35);
+  padding: 40px;
+  border-radius: 25px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+  max-width: 900px;
+  width: 100%;
+  animation: aparecer 1s ease;
+}
+
+h1{
+  font-size: clamp(2rem, 6vw, 5rem);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+
+p{
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.contador{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.box{
+  background: rgba(255,255,255,0.12);
+  padding: 25px 15px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.numero{
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: bold;
+}
+
+.texto{
+  margin-top: 10px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.finalizado{
+  font-size: 3rem;
+  font-weight: bold;
+  animation: piscar 1s infinite;
+}
+
+@keyframes piscar{
+  50%{
+    opacity: 0.5;
+  }
+}
+
+@keyframes aparecer{
+  from{
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media(max-width: 700px){
+
+  .contador{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+}
+
+@media(max-width: 450px){
+
+  .contador{
+    grid-template-columns: 1fr;
+  }
+
+}
