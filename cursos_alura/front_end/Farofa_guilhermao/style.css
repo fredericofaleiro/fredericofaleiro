@@ -17,6 +17,7 @@ body{
   padding: 20px;
 }
 
+/* NÃO deixa esticar */
 .container{
   background: rgba(0,0,0,0.35);
   padding: 40px;
@@ -28,8 +29,9 @@ body{
   animation: aparecer 1s ease;
 }
 
+/* Título responsivo mas sem quebrar layout */
 h1{
-  font-size: clamp(2rem, 6vw, 5rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
   margin-bottom: 20px;
   text-transform: uppercase;
   line-height: 1.2;
@@ -37,38 +39,43 @@ h1{
 }
 
 p{
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 30px;
   opacity: 0.9;
 }
 
+/* 🔥 FORÇA 4 COLUNAS SEMPRE */
 .contador{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 15px;
 }
 
+/* caixas menores no celular, mas sem quebrar linha */
 .box{
   background: rgba(255,255,255,0.12);
-  padding: 25px 15px;
+  padding: 20px 10px;
   border-radius: 20px;
   border: 1px solid rgba(255,255,255,0.2);
+  min-width: 0;
 }
 
+/* números menores no mobile */
 .numero{
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
   font-weight: bold;
 }
 
 .texto{
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
+/* tela final */
 .finalizado{
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   animation: piscar 1s infinite;
 }
@@ -84,25 +91,11 @@ p{
     transform: translateY(30px);
     opacity: 0;
   }
-
   to{
     transform: translateY(0);
     opacity: 1;
   }
 }
 
-@media(max-width: 700px){
-
-  .contador{
-    grid-template-columns: repeat(2,1fr);
-  }
-
-}
-
-@media(max-width: 450px){
-
-  .contador{
-    grid-template-columns: 1fr;
-  }
-
-}
+/* ❌ REMOVIDO: não quebra mais em celular */
+/* tudo continua igual no mobile */
