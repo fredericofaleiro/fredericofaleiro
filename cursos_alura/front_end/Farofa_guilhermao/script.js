@@ -43,18 +43,18 @@ atualizarContagem();
 
 setInterval(atualizarContagem, 1000);
 
-let votos = localStorage.getItem("votos") 
-  ? parseInt(localStorage.getItem("votos")) 
+let votos = localStorage.getItem("cliques") 
+  ? parseInt(localStorage.getItem("cliques")) 
   : 0;
 
 const atualizarVotos = () => {
-  document.getElementById("votos").innerText = `Votos: ${votos}`;
+  document.getElementById("cliques").innerText = `cliques: ${votos}`;
 };
 
 atualizarVotos();
 
 document.getElementById("botao").addEventListener("click", () => {
   votos++;
-  localStorage.setItem("votos", votos);
+  localStorage.setItem("cliques", votos);
   atualizarVotos();
 });
