@@ -94,6 +94,28 @@
     atualizarContagem();
     setInterval(atualizarContagem, 1000);
 
+    const imagens = [
+  "img1.png",
+  "img2.png",
+  "img3.png",
+  "img4.png",
+  "img5.jpg",
+  "img6.jpg",
+  "img7.jpg"
+];
+
+let i = 0;
+
+function trocarFundo() {
+  document.body.style.backgroundImage = `url(${imagens[i]})`;
+  document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundPosition = "center";
+  i = (i + 1) % imagens.length;
+}
+
+trocarFundo();
+setInterval(trocarFundo, 4000); 
+
   </script>
 
 </body>

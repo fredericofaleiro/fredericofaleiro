@@ -10,14 +10,36 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(Captura\ de\ tela\ 2026-05-19\ 135350.png) no-repeat center center/cover;
+
+  /* 🔥 agora o fundo vem do JS */
+  background-color: black;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   overflow: hidden;
   color: white;
   text-align: center;
   padding: 20px;
 }
 
+/* 🔥 escurece o fundo pra leitura */
+body::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: 0;
+}
+
 .container{
+  position: relative;
+  z-index: 1;
+
   background: rgba(0,0,0,0.35);
   padding: 30px;
   border-radius: 25px;
@@ -46,6 +68,40 @@ p{
   gap: 12px;
 }
 
+/* 🔥 caixas do contador */
+.box{
+  background: rgba(255,255,255,0.12);
+  padding: 15px 8px;
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 70px;
+  text-align: center;
+}
+
+.numero{
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  font-weight: bold;
+
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.texto{
+  margin-top: 6px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* 🔘 botão */
 button{
   margin-top: 20px;
   padding: 12px 20px;
@@ -68,42 +124,7 @@ button:hover{
   font-size: 1.1rem;
 }
 
-.box{
-  background: rgba(255,255,255,0.12);
-  padding: 15px 8px;
-  border-radius: 15px;
-
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  min-width: 70px; /* 🔥 impede esmagar demais */
-  text-align: center;
-}
-
-/* 🔥 impede número de estourar */
-.numero{
-  font-size: clamp(1.2rem, 4vw, 2.5rem);
-  font-weight: bold;
-
-  /* evita sair da caixa */
-  max-width: 100%;
-  overflow-wrap: break-word;
-}
-
-.texto{
-  margin-top: 6px;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-
-  /* 🔥 impede corte de letras */
-  white-space: nowrap;
-}
-
+/* 🏁 final da contagem */
 .finalizado{
   font-size: 2rem;
   font-weight: bold;
@@ -111,5 +132,7 @@ button:hover{
 }
 
 @keyframes piscar{
-  50%{ opacity: 0.5; }
+  50%{
+    opacity: 0.5;
+  }
 }
