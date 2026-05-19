@@ -17,63 +17,71 @@ body{
   padding: 20px;
 }
 
-/* NÃO deixa esticar */
 .container{
   background: rgba(0,0,0,0.35);
-  padding: 40px;
+  padding: 30px;
   border-radius: 25px;
   backdrop-filter: blur(8px);
   box-shadow: 0 0 30px rgba(0,0,0,0.4);
   max-width: 900px;
   width: 100%;
-  animation: aparecer 1s ease;
 }
 
-/* Título responsivo mas sem quebrar layout */
 h1{
   font-size: clamp(1.5rem, 3vw, 3rem);
   margin-bottom: 20px;
   text-transform: uppercase;
   line-height: 1.2;
-  text-shadow: 0 0 15px rgba(255,255,255,0.5);
 }
 
 p{
   font-size: 1rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   opacity: 0.9;
 }
 
-/* 🔥 FORÇA 4 COLUNAS SEMPRE */
 .contador{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(4, minmax(70px, 1fr));
+  gap: 12px;
 }
 
-/* caixas menores no celular, mas sem quebrar linha */
 .box{
   background: rgba(255,255,255,0.12);
-  padding: 20px 10px;
-  border-radius: 20px;
-  border: 1px solid rgba(255,255,255,0.2);
-  min-width: 0;
+  padding: 15px 8px;
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 70px; /* 🔥 impede esmagar demais */
+  text-align: center;
 }
 
-/* números menores no mobile */
+/* 🔥 impede número de estourar */
 .numero{
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
   font-weight: bold;
+
+  /* evita sair da caixa */
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .texto{
-  margin-top: 10px;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
+  margin-top: 6px;
+  font-size: 0.75rem;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  /* 🔥 impede corte de letras */
+  white-space: nowrap;
 }
 
-/* tela final */
 .finalizado{
   font-size: 2rem;
   font-weight: bold;
@@ -81,21 +89,5 @@ p{
 }
 
 @keyframes piscar{
-  50%{
-    opacity: 0.5;
-  }
+  50%{ opacity: 0.5; }
 }
-
-@keyframes aparecer{
-  from{
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to{
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* ❌ REMOVIDO: não quebra mais em celular */
-/* tudo continua igual no mobile */
