@@ -70,6 +70,7 @@ cursos-alura/
     ├── ingresso
     ├── jogo-do-numero-secreto
     └── sorteador-numeros
+```
 
 # 🚀 Projetos em destaque
 

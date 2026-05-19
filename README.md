@@ -21,7 +21,19 @@ Tenho interesse em desenvolvimento de software, Inteligência Artificial e novas
 
 
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,git,github" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode,nodejs" />
+</p>
+
+
+---
+
+
+## 🛠️ em aprendizado
+
+
+
+<p>
+  <img src="https://skillicons.dev/icons?i=react,java,c" />
 </p>
 
 
@@ -34,7 +46,8 @@ Tenho interesse em desenvolvimento de software, Inteligência Artificial e novas
 ✔️ CRUD  
 ✔️ Node.js  
 ✔️ Banco de Dados  
-✔️ Estrutura de Dados  
+✔️ Estrutura de Dados   
+✔️ Linguagem C e java
 
 ---
 
