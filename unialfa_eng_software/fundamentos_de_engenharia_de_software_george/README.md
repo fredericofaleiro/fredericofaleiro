@@ -37,17 +37,11 @@ Projeto acadêmico desenvolvido com foco na estruturação de aplicações web e
 - Separação entre front-end e back-end
 - Conceitos fundamentais de engenharia de software
 - Planejamento de aplicações
+- requisições UML
+- documentação de projeto
 
 ---
 
-## 🌐 Desenvolvimento Web
-- HTML5
-- CSS3
-- Estruturação de páginas
-- Organização visual
-- Componentização básica
-
----
 
 # 🎯 Objetivo
 
