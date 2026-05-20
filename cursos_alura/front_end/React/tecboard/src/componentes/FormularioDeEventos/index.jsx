@@ -3,7 +3,7 @@ import { CampoDeEntrada } from "../CampoDeEntrada";
 import { CampoDeFormulario } from "../CampoDeFormulario";
 import { Label } from "../Label";
 import { TituloFormulario } from "../TituloFormulario";
-import { Botao } from '../Botao';
+import { Botao } from '../botao';
 import { ListaSuspensa } from '../ListaSuspensa';
 
 export function FormularioDeEvento({ temas, aoSubmeter }) {
