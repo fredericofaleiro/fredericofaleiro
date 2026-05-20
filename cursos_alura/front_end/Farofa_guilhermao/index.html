@@ -33,6 +33,9 @@
 
   </div>
 
+  <div id="notificacao"></div>
+  
+
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
     import { getDatabase, ref, onValue, runTransaction }
@@ -116,6 +119,29 @@ function trocarFundo() {
 
 trocarFundo();
 setInterval(trocarFundo, 4000); 
+
+const mensagens = [
+  "o Guilhermão está chegando",
+  "Guilhermão não vai te perdoar",
+  "Se prepare pra farofa",
+  "Guilhermão te quer",
+  "A farofa está quase começando"
+];
+
+function mostrarNotificacao(){
+  const box = document.createElement("div");
+  box.classList.add("toast");
+
+  box.innerText = mensagens[Math.floor(Math.random() * mensagens.length)];
+
+  document.getElementById("notificacao").appendChild(box);
+
+  setTimeout(() => {
+    box.remove();
+  }, 4000);
+}
+
+setInterval(mostrarNotificacao, 6000);
 
   </script>
 
