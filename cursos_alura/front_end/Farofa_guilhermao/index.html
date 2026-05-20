@@ -9,6 +9,9 @@
 </head>
 <body>
 
+  <div id="bg1" class="bg"></div>
+<div id="bg2" class="bg"></div>
+
   <div class="container">
 
     <h1>
@@ -123,14 +126,40 @@
   "img7.jpg"
 ];
 
-let i = 0;
+let atual = 0;
+let mostrandoBg1 = true;
 
-function trocarFundo() {
-  document.body.style.backgroundImage = `url(${imagens[i]})`;
-  document.body.style.backgroundSize = "cover";
-  document.body.style.backgroundPosition = "center";
-  i = (i + 1) % imagens.length;
+const bg1 = document.getElementById("bg1");
+const bg2 = document.getElementById("bg2");
+
+// primeira imagem
+bg1.style.backgroundImage = `url(${imagens[0]})`;
+
+function trocarFundo(){
+
+  atual = (atual + 1) % imagens.length;
+
+  const proximaImagem = `url(${imagens[atual]})`;
+
+  if(mostrandoBg1){
+
+    bg2.style.backgroundImage = proximaImagem;
+
+    bg2.style.opacity = 1;
+    bg1.style.opacity = 0;
+
+  } else {
+
+    bg1.style.backgroundImage = proximaImagem;
+
+    bg1.style.opacity = 1;
+    bg2.style.opacity = 0;
+  }
+
+  mostrandoBg1 = !mostrandoBg1;
 }
+
+setInterval(trocarFundo, 5000);
 
 trocarFundo();
 setInterval(trocarFundo, 4000); 
