@@ -28,12 +28,19 @@
 
     <button id="botao">Guilherminho é viado ne mamãe</button>
     <p id="votos">Votos: 0</p>
-    <p><span class="vermelin">se chegar a 10.000 votos guilherminho vai beber e dar o bumbum</span></p>
-    <p>se chegar a 1.000.000 votos bolsonaro vai pra farofa e brasil vai ser hexa</p>
+    <p><span class="vermelin">10.000 votos guilherminho vai beber e dar o bumbum</span></p>
+    <p>50.000 votos guilhermin vira gay</p>
+    <p>100.000 votos o neymar aparece na farora</p>
+    <p>200.000 votos o lancer volta</p>
+    <p>300.000 votos o arthur não vai atrasar</p>
+    <p>500.000 votos o lula ganha a eleição</p>
+    <p>1.000.000 votos bolsonaro vai pra farofa e brasil vai ser hexa</p>
+    
 
   </div>
 
   <div id="notificacao"></div>
+  <div id="efeitoFinal"></div>
   
 
   <script type="module">
@@ -142,6 +149,41 @@ function mostrarNotificacao(){
 }
 
 setInterval(mostrarNotificacao, 6000);
+
+const META = 1000000;
+let efeitoAtivado = false;
+
+onValue(votosRef, (snapshot) => {
+  const votos = snapshot.val() || 0;
+  document.getElementById("votos").innerText = `Votos: ${votos}`;
+
+  if (votos >= META && !efeitoAtivado) {
+    efeitoAtivado = true;
+
+    // muda visual pra "modo festa"
+    document.body.classList.add("verde");
+
+    // começa GIFs subindo
+    setInterval(criarGif, 800);
+  }
+});
+
+function criarGif(){
+  const gif = document.createElement("img");
+
+  // 🔥 coloca seu gif aqui (pode ser link ou arquivo local)
+  gif.src = "gui.webp";
+
+  gif.classList.add("gif");
+
+  gif.style.left = Math.random() * 90 + "vw";
+
+  document.getElementById("efeitoFinal").appendChild(gif);
+
+  setTimeout(() => {
+    gif.remove();
+  }, 4000);
+}
 
   </script>
 
