@@ -236,19 +236,43 @@ function criarGif(){
   }, 4000);
 }
 
+const musica = document.getElementById("musica");
+const toggleBtn = document.getElementById("toggleMusica");
+
+let tocando = false;
+
+toggleBtn.addEventListener("click", async () => {
+
+  if(!tocando){
+
+    await musica.play();
+
+    musica.volume = 0.4;
+
+    toggleBtn.innerText = "🔊 Desativar Música";
+
+    tocando = true;
+
+  } else {
+
+    musica.pause();
+
+    toggleBtn.innerText = "🔇 Ativar Música";
+
+    tocando = false;
+  }
+
+});
 
 
   </script>
 
   <!-- 🔥 PLAYER INVISÍVEL -->
-<iframe
-  id="musica"
-  width="0"
-  height="0"
-  src="https://www.youtube.com/embed/2uTeDUKUBl8?autoplay=1&loop=1&playlist=2uTeDUKUBl8"
-  frameborder="0"
-  allow="autoplay"
-></iframe>
+<audio id="musica" loop>
+  <source src="opa.mp3" type="audio/mpeg">
+</audio>
+
+<button id="toggleMusica">🔇 Ativar Música</button>
 
 </body>
 </html>
