@@ -28,16 +28,23 @@
 
     <button id="botao">Guilherminho é viado ne mamãe</button>
     <p id="votos">Votos: 0</p>
-    <p><span class="vermelin">10.000 votos guilherminho vai beber e dar o bumbum</span></p>
-    <p><span class="vermelin">  50.000 votos a julia vai virar fã do neymar</span></p>
-    <p><span>100.000 votos o caneta azul aparece na farora</span></p>
-    <p><span>150.000 votos vamos gozar no arthur</span></p>
-    <p><span>200.000 votos o lancer volta</span></p>
-    <p><span>300.000 votos o arthur não vai atrasar</span></p>
-    <p><span>500.000 votos o caneta azul ganha a eleição</span></p>
-    <p><span>750.000 votos o arthur vai ter um filho</span></p>
-    <p><span>1.000.000 votos bolsonaro vai pra farofa e brasil vai ser hexa</span></p>
+    <p data-meta="10000">10.000 votos guilherminho vai beber e dar o bumbum</p>
 
+    <p data-meta="50000">50.000 votos a julia vai virar fã do neymar</p>
+
+    <p data-meta="100000">100.000 votos o caneta azul aparece na farofa</p>
+
+    <p data-meta="150000">150.000 votos vamos zoar o arthur</p>
+
+    <p data-meta="200000">200.000 votos o lancer volta</p>
+
+    <p data-meta="300000">300.000 votos o arthur não vai atrasar</p>
+
+    <p data-meta="500000">500.000 votos o caneta azul ganha a eleição</p>
+
+    <p data-meta="750000">750.000 votos o arthur vai ter um filho</p>
+
+    <p data-meta="1000000">1.000.000 votos brasil vai ser hexa</p>
   </div>
 
   <div id="notificacao"></div>
@@ -156,17 +163,31 @@ let efeitoAtivado = false;
 
 onValue(votosRef, (snapshot) => {
   const votos = snapshot.val() || 0;
+
   document.getElementById("votos").innerText = `Votos: ${votos}`;
 
-  if (votos >= META && !efeitoAtivado) {
+  // 🔥 ativa metas
+  const metas = document.querySelectorAll("p[data-meta]");
+
+  metas.forEach((meta) => {
+    const valor = Number(meta.dataset.meta);
+
+    if(votos >= valor){
+      meta.classList.add("vermelin");
+    }
+  });
+
+  // 🔥 1 MILHÃO = MODO FESTA
+  if(votos >= META && !efeitoAtivado){
     efeitoAtivado = true;
 
-    // muda visual pra "modo festa"
+    // deixa tudo verde
     document.body.classList.add("verde");
 
-    // começa GIFs subindo
+    // começa os gifs
     setInterval(criarGif, 800);
   }
+
 });
 
 function criarGif(){
@@ -185,6 +206,8 @@ function criarGif(){
     gif.remove();
   }, 4000);
 }
+
+
 
   </script>
 

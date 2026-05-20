@@ -194,6 +194,10 @@ button{
   transition: 0.2s;
 }
 
+.verde::before{
+  background: rgba(0, 255, 100, 0.25) !important;
+}
+
 button:hover{
   transform: scale(1.05);
   background: #222;
