@@ -34,16 +34,16 @@ void move(char direcao) {
 
     switch (direcao)
     {
-    case 'w':
+    case CIMA:
         proximox--;  // Calcula a próxima posição x para cima
         break;
-    case 's':
+    case BAIXO:
         proximox++;  // Calcula a próxima posição x para baixo
         break;
-    case 'a':
+    case ESQUERDA:
         proximoy--;  // Calcula a próxima posição y para a esquerda
         break;
-    case 'd':
+    case DIREITA:
         proximoy++;  // Calcula a próxima posição y para a direita
         break;
     }
@@ -63,7 +63,7 @@ void move(char direcao) {
 int main() {
 
     leMapa(&padrao);  // Chama a função para ler o mapa do arquivo
-    encontraMapa(&padrao, &heroi, '@');  // Chama a função para encontrar a posição do personagem no mapa
+    encontraMapa(&padrao, &heroi, HEROI);  // Chama a função para encontrar a posição do personagem no mapa
 
     do {
 

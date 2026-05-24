@@ -6,7 +6,7 @@ void andaNoMapa(MAPA* padrao, int xorigem, int yorigem, int xdestino, int ydesti
 
     char personagem = padrao->matriz[xorigem][yorigem];
     padrao->matriz[xdestino][ydestino] = personagem;
-    padrao->matriz[xorigem][yorigem] = '.';  
+    padrao->matriz[xorigem][yorigem] = VAZIO;  
 }
 
 int evalida(MAPA* padrao, int x, int y) {
@@ -20,7 +20,7 @@ int evalida(MAPA* padrao, int x, int y) {
 }
 
 int evazia(MAPA* padrao, int x, int y) {
-    if(padrao->matriz[x][y] != '.') {
+    if(padrao->matriz[x][y] != VAZIO) {
         return 0;  // verifica se a próxima posição é vazia (representada por '.'), caso contrário, retorna 0
     }
     return 1;  // retorna 1 se a próxima posição é vazia
