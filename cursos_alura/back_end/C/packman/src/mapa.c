@@ -1,6 +1,17 @@
 #include "mapa.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
+void copiaMapa(MAPA* destino, MAPA* origem) {
+    destino->linhas = origem->linhas;  // Copia o número de linhas do mapa de origem para destino
+    destino->colunas = origem->colunas;  // Copia o número de colunas do mapa de origem para destino
+    
+    alocaMapa(destino);  // Aloca memória para o mapa de destino
+    for(int i=0; i < origem->linhas; i++) {
+        strcpy(destino->matriz[i], origem->matriz[i]);  // Copia cada linha do mapa de origem para destino
+    }
+}
 
 void andaNoMapa(MAPA* padrao, int xorigem, int yorigem, int xdestino, int ydestino) {
 
@@ -26,17 +37,54 @@ int evazia(MAPA* padrao, int x, int y) {
     return 1;  // retorna 1 se a próxima posição é vazia
 }
 
-void encontraMapa(MAPA* padrao, POSICAO* p, char c) {
+int eparede(MAPA* padrao, int x, int y) {
+    return
+    padrao->matriz[x][y] == PAREDE_HORIZONTAL ||
+    padrao->matriz[x][y] == PAREDE_VERTICAL;
+        
+}
+
+int epersonagem(MAPA* padrao,char personagem, int x, int y) {
+    return
+    padrao->matriz[x][y] == personagem;
+}
+
+int podeAndar(MAPA* padrao, char personagem, int x, int y) {
+
+    if(
+        !evalida(padrao, x, y) ||
+        eparede(padrao, x, y)
+    ) {
+        return 0;
+    }
+
+    char destino = padrao->matriz[x][y];
+
+    // herói não pode entrar no fantasma
+    if(personagem == HEROI && destino == FANTASMA) {
+        return 0;
+    }
+
+    // fantasma não pode entrar em outro fantasma
+    if(personagem == FANTASMA && destino == FANTASMA) {
+        return 0;
+    }
+
+    return 1;
+}
+
+int encontraMapa(MAPA* padrao, POSICAO* p, char c) {
     // Loop que percorre o mapa para encontrar a posição do caractere 'c'
     for(int i=0; i < padrao->linhas; i++) {
         for(int j=0; j < padrao->colunas; j++) {
             if(padrao->matriz[i][j] == c) {  // Verifica se o caractere na posição (i, j) é 'c'
                 p->x = i;  // Armazena a linha do caractere encontrado
                 p->y = j;  // Armazena a coluna do caractere encontrado
-                break;  // Sai da função após encontrar o caractere
+                return 1;  // Sai da função após encontrar o caractere
             }
         }
     }
+    return 0;  // Retorna 0 se o caractere 'c' não for encontrado no mapa
 }
 
 void liberaMapa(MAPA* padrao) {
@@ -86,11 +134,4 @@ void leMapa(MAPA* padrao) {
 
     // Fecha o arquivo para liberar o recurso
     fclose(f);
-}
-
-void imprimeMapa(MAPA* padrao) {
-    // Loop que percorre cada linha do mapa e a imprime
-    for(int i=0; i < padrao->linhas; i++) {
-        printf("%s\n", padrao->matriz[i]);
-    }
 }
