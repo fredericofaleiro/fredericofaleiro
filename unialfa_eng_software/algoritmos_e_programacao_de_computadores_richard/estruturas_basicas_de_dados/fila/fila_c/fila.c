@@ -18,7 +18,14 @@ void adicionarElemento() {
 
     for (int i = 0; i < TAMANHO_DA_FILA; i++) {
         if (TAM[i][0] == '\0') {
-            strcpy(TAM[i], elemento);
+            int j = 0;
+
+            while (elemento[j] != '\0') {
+            TAM[i][j] = elemento[j];
+            j++;
+            }
+
+            TAM[i][j] = '\0';
             break;
         }
     }
@@ -35,7 +42,15 @@ void removerElemento() {
 
     for (int i = 1; i < TAMANHO_DA_FILA; i++) {
         if (TAM[i][0] != '\0') {
-            strcpy(TAM[i - 1], TAM[i]);
+            int j = 0;
+
+            while (TAM[i][j] != '\0') {
+            TAM[i - 1][j] = TAM[i][j];
+            j++;
+            }
+
+            TAM[i - 1][j] = '\0';
+
             TAM[i][0] = '\0';
         } else {
             break;
