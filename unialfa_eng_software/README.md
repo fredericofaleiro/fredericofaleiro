@@ -2,22 +2,32 @@
 
 Repositório criado para armazenar atividades, projetos, exercícios e conteúdos desenvolvidos durante minha graduação em Engenharia de Software na Unialfa.
 
-Aqui organizo materiais acadêmicos, projetos práticos e estudos relacionados às disciplinas do curso.
+Aqui organizo meus estudos de forma separada por períodos da faculdade, reunindo materiais acadêmicos, projetos práticos e exercícios desenvolvidos ao longo do curso.
 
 ---
 
 # 👨‍💻 Sobre o repositório
 
-Este repositório reúne conteúdos desenvolvidos durante as disciplinas da faculdade, abordando lógica de programação, estruturas de dados, desenvolvimento web e fundamentos da engenharia de software.
+Este repositório documenta minha evolução acadêmica e prática durante a graduação em Engenharia de Software.
 
-Os projetos e exercícios presentes aqui têm como objetivo fortalecer minha base técnica, praticar resolução de problemas e aplicar conceitos estudados em sala de aula.
+Os conteúdos incluem:
+
+* Exercícios
+* Projetos acadêmicos
+* Estruturas de dados
+* Desenvolvimento web
+* Lógica de programação
+* Estudos complementares
+* Organização de projetos
+
+Cada período possui sua própria estrutura de pastas e documentação.
 
 ---
 
 # 🛠️ Tecnologias e Ferramentas
 
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,c,git,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=html,css,c,js,git,github,vscode" />
 </p>
 
 ---
@@ -27,104 +37,37 @@ Os projetos e exercícios presentes aqui têm como objetivo fortalecer minha bas
 ```txt
 unialfa-eng-software/
 │
-├── algoritmos-e-programacao-de-computadores-richard/
-│   └── estruturas-basicas-de-dados/
-│       ├── fila/
-│       ├── lista/
-│       └── pilha/
+├── 1-periodo/
+│   ├── algoritmos-e-programacao/
+│   ├── fundamentos-de-engenharia-de-software/
+│   └── oficina-de-programacao/
 │
-├── fundamentos-de-engenharia-de-software-george/
-│   └── projeto-foodhub/
-│       ├── back-end/
-│       └── front-end/
+├── 2-periodo/
 │
-└── oficina-de-programacao-guilherme/
-    └── trabalhos/
-        └── FITB/
+├── ...
+│
+├── 8-periodo/
+│
+└── README.md
 ```
 
-# 🚀 Projetos e conteúdos
+---
+
+# 📚 Organização por períodos
+
+Cada pasta representa um período da graduação e contém:
+
+* Disciplinas
+* Exercícios
+* Trabalhos
+* Projetos
+* Estudos
+* Documentações em Markdown
 
 ---
 
-# 🧠 Estruturas Básicas de Dados
+# 🚀 Objetivo
 
-Conteúdo voltado para estudo e implementação de estruturas fundamentais da programação utilizando linguagem C.
+Este repositório tem como objetivo registrar minha evolução durante a graduação, praticar desenvolvimento de software e manter organizados os conteúdos estudados ao longo do curso.
 
-## 📚 Estruturas estudadas
-
-- Pilha
-- Fila
-- Lista
-
-## 📝 Cada estrutura possui documentação em Markdown explicando:
-
-- Objetivo
-- Funcionamento
-- Aplicações
-- Futuras implementações em C
-
----
-
-# 🍔 FoodHub
-
-Projeto acadêmico desenvolvido durante a disciplina de Fundamentos de Engenharia de Software.
-
-## 📂 Estrutura organizada em:
-
-- Front-end
-- Back-end
-
-Projeto voltado para prática de organização de aplicações e separação de responsabilidades.
-
----
-
-# 🏋️ FITB
-
-Página desenvolvida utilizando HTML e CSS para uma academia fictícia.
-
-## 🎯 Foco do projeto
-
-- Estruturação de páginas
-- Responsividade
-- Estilização
-- Organização visual
-
----
-
-# 📚 Conteúdos estudados
-
----
-
-## 💻 Programação
-
-- Lógica de programação
-- Estruturas de dados
-- Algoritmos
-- Condicionais
-- Loops
-- Funções
-
----
-
-## 🌐 Desenvolvimento Web
-
-- HTML5
-- CSS3
-- Estruturação de páginas
-- Organização de projetos
-
----
-
-## ⚙️ Engenharia de Software
-
-- Organização de sistemas
-- Separação entre front-end e back-end
-- Estruturação de projetos
-- Conceitos fundamentais da engenharia de software
-
----
-
-# 🎯 Objetivo
-
-Este repositório tem como objetivo documentar minha evolução acadêmica e prática durante a graduação em Engenharia de Software, reunindo projetos, exercícios e conteúdos desenvolvidos ao longo das disciplinas.
+Além disso, serve como portfólio acadêmico e técnico para acompanhar meu crescimento na área de tecnologia.
