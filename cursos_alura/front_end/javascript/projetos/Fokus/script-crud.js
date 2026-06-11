@@ -99,7 +99,6 @@ formAddTask.addEventListener("submit", (event) => {
     const elementoTarefa = criarElementoTarefa(tarefa)
     ulTarefas.append(elementoTarefa)
     atualizarTarefas()
-    cancelarTarefa()
 });
 
 tarefas.forEach(tarefa => {
