@@ -98,6 +98,21 @@ function iniciarOuPausar() {
         zerar()
         return
     }
+
+    if(tempoDecorridoEmSegundos <= 0){
+        switch (html.getAttribute('data-contexto')) { 
+            case "foco":
+                tempoDecorridoEmSegundos = 1500
+                break;
+            case "descanso-curto":
+                tempoDecorridoEmSegundos = 300
+                break;
+            case "descanso-longo":
+                tempoDecorridoEmSegundos = 900
+                break;
+        }
+    }
+
     audioPlay.play()
     intervaloId = setInterval(contagemRegressiva, 1000)
     iniciarOuPausarBt.innerText = 'Pausar'
