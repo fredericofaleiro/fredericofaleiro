@@ -11,6 +11,7 @@ import { ToDoList } from "./components/ToDoList"
 import { Dialog } from "./components/Dialog"
 import React from "react"
 
+
 const todos = [
   {
     id: 1,
@@ -83,7 +84,9 @@ function App() {
             })}
           </ToDoList>
           <Footer>
-            <Dialog isOpen={showDialog}/>
+            <Dialog isOpen={showDialog} onClose={toggleDialog}>
+              <p>Descreva a nova tarefa que deseja adicionar:</p>
+            </Dialog>
             <FabButton onClick={toggleDialog}>
               <IconPlus />
             </FabButton>
