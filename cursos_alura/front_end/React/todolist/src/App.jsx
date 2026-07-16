@@ -10,6 +10,7 @@ import { ToDoItem } from "./components/ToDoItem"
 import { ToDoList } from "./components/ToDoList"
 import { Dialog } from "./components/Dialog"
 import React from "react"
+import { TextImput } from "./components/TextImput"
 
 
 const todos = [
@@ -85,7 +86,9 @@ function App() {
           </ToDoList>
           <Footer>
             <Dialog isOpen={showDialog} onClose={toggleDialog}>
-              <p>Descreva a nova tarefa que deseja adicionar:</p>
+              <form>
+              <TextImput placeholder="Digite a nova tarefa" />
+              </form>
             </Dialog>
             <FabButton onClick={toggleDialog}>
               <IconPlus />
